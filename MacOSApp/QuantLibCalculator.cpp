@@ -40,8 +40,6 @@
 #include <ql/time/calendars/target.hpp>
 #include <ql/time/daycounters/thirty360.hpp>
 #include <ql/pricingengines/bond/discountingbondengine.hpp>
-#include <ql/instruments/vanillaoption.hpp>
-#include <ql/pricingengines/vanilla/analyticeuropeanengine.hpp>
 #include <stdexcept>
 
 using namespace QuantLib;

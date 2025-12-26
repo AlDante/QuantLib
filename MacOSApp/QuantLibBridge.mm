@@ -46,8 +46,8 @@ OptionResultC calculateEuropeanOptionCpp(
         cResult.theta = result.theta;
         cResult.rho = result.rho;
         
-        // Allocate static storage for method string
-        static char methodBuffer[256];
+        // Use thread-local storage for method string to ensure thread safety
+        static thread_local char methodBuffer[256];
         strncpy(methodBuffer, result.method.c_str(), 255);
         methodBuffer[255] = '\0';
         cResult.method = methodBuffer;
@@ -82,8 +82,8 @@ OptionResultC calculateAmericanOptionCpp(
         cResult.theta = result.theta;
         cResult.rho = result.rho;
         
-        // Allocate static storage for method string
-        static char methodBuffer[256];
+        // Use thread-local storage for method string to ensure thread safety
+        static thread_local char methodBuffer[256];
         strncpy(methodBuffer, result.method.c_str(), 255);
         methodBuffer[255] = '\0';
         cResult.method = methodBuffer;
