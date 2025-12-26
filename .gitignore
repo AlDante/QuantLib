@@ -121,3 +121,12 @@ nbproject
 .dir-locals.el
 Build.props
 Directory.Build.props
+
+# macOS specific
+.DS_Store
+*.app
+*.dSYM
+MacOSApp/build/
+MacOSApp/*.xcodeproj
+MacOSApp/*.xcworkspace
+*.swiftmodule
